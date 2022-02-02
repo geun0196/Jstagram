@@ -1,0 +1,6 @@
+framework module Pods_Jstagram {
+  umbrella header "Pods-Jstagram-umbrella.h"
+
+  export *
+  module * { export * }
+}

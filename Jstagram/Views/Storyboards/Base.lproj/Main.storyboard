@@ -131,10 +131,10 @@
             </objects>
             <point key="canvasLocation" x="-287" y="191"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="muT-mB-NXM">
             <objects>
-                <viewController id="CAg-Lx-Lw5" sceneMemberID="viewController">
+                <viewController id="CAg-Lx-Lw5" customClass="HomeViewController" customModule="Jstagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jZA-CY-Une">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

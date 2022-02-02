@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F99FF3F4388F4198D4D5CB2 /* Pods_Jstagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5CF4917AE6F0E8084151A9C /* Pods_Jstagram.framework */; };
 		4E55F92A27A56A7400494F0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E55F92927A56A7400494F0F /* AppDelegate.swift */; };
 		4E55F92C27A56A7400494F0F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E55F92B27A56A7400494F0F /* SceneDelegate.swift */; };
 		4E55F92E27A56A7400494F0F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E55F92D27A56A7400494F0F /* HomeViewController.swift */; };
@@ -27,9 +28,14 @@
 		4E55F96227A57FEE00494F0F /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E55F96127A57FEE00494F0F /* SearchResultViewController.swift */; };
 		4E55F96427A5804E00494F0F /* PostEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E55F96327A5804E00494F0F /* PostEditorViewController.swift */; };
 		4E55F96627A5806400494F0F /* PublishPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E55F96527A5806400494F0F /* PublishPostViewController.swift */; };
+		4ED3654027AA566300EA0A5D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4ED3653F27AA566300EA0A5D /* GoogleService-Info.plist */; };
+		4ED3654227AA613C00EA0A5D /* DatabaseManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED3654127AA613C00EA0A5D /* DatabaseManger.swift */; };
+		4ED3654427AA622200EA0A5D /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED3654327AA622200EA0A5D /* AuthManager.swift */; };
+		4ED3654627AA628C00EA0A5D /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED3654527AA628C00EA0A5D /* StorageManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		473905FB9E98CBE38755EE73 /* Pods-Jstagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jstagram.release.xcconfig"; path = "Target Support Files/Pods-Jstagram/Pods-Jstagram.release.xcconfig"; sourceTree = "<group>"; };
 		4E55F92627A56A7400494F0F /* Jstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E55F92927A56A7400494F0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E55F92B27A56A7400494F0F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +58,12 @@
 		4E55F96127A57FEE00494F0F /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
 		4E55F96327A5804E00494F0F /* PostEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEditorViewController.swift; sourceTree = "<group>"; };
 		4E55F96527A5806400494F0F /* PublishPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishPostViewController.swift; sourceTree = "<group>"; };
+		4ED3653F27AA566300EA0A5D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4ED3654127AA613C00EA0A5D /* DatabaseManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManger.swift; sourceTree = "<group>"; };
+		4ED3654327AA622200EA0A5D /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		4ED3654527AA628C00EA0A5D /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		52C76ECB6DF372F0A6ED789E /* Pods-Jstagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jstagram.debug.xcconfig"; path = "Target Support Files/Pods-Jstagram/Pods-Jstagram.debug.xcconfig"; sourceTree = "<group>"; };
+		B5CF4917AE6F0E8084151A9C /* Pods_Jstagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jstagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,17 +71,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F99FF3F4388F4198D4D5CB2 /* Pods_Jstagram.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01015DDFDB8BC1549AB9BE4E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5CF4917AE6F0E8084151A9C /* Pods_Jstagram.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4E55F91D27A56A7400494F0F = {
 			isa = PBXGroup;
 			children = (
 				4E55F92827A56A7400494F0F /* Jstagram */,
 				4E55F92727A56A7400494F0F /* Products */,
+				B71DED62A6A4EF3D594539B2 /* Pods */,
+				01015DDFDB8BC1549AB9BE4E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,8 +144,12 @@
 		4E55F94227A56EE400494F0F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4ED3653F27AA566300EA0A5D /* GoogleService-Info.plist */,
 				4E55F92927A56A7400494F0F /* AppDelegate.swift */,
 				4E55F92B27A56A7400494F0F /* SceneDelegate.swift */,
+				4ED3654127AA613C00EA0A5D /* DatabaseManger.swift */,
+				4ED3654327AA622200EA0A5D /* AuthManager.swift */,
+				4ED3654527AA628C00EA0A5D /* StorageManager.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -152,14 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				4E55F95127A57BB300494F0F /* Onboarding */,
-				4E55F95927A57F5500494F0F /* PostViewController.swift */,
-				4E55F95727A57E4A00494F0F /* EditprofileViewController.swift */,
-				4E55F95B27A57F7900494F0F /* SettingsViewController.swift */,
-				4E55F95D27A57FA900494F0F /* ListViewViewController.swift */,
-				4E55F95F27A57FDD00494F0F /* SearchViewController.swift */,
-				4E55F96127A57FEE00494F0F /* SearchResultViewController.swift */,
-				4E55F96327A5804E00494F0F /* PostEditorViewController.swift */,
-				4E55F96527A5806400494F0F /* PublishPostViewController.swift */,
+				4ED3653E27AA564F00EA0A5D /* General */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -173,6 +193,30 @@
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
+		4ED3653E27AA564F00EA0A5D /* General */ = {
+			isa = PBXGroup;
+			children = (
+				4E55F95927A57F5500494F0F /* PostViewController.swift */,
+				4E55F95727A57E4A00494F0F /* EditprofileViewController.swift */,
+				4E55F95B27A57F7900494F0F /* SettingsViewController.swift */,
+				4E55F95D27A57FA900494F0F /* ListViewViewController.swift */,
+				4E55F95F27A57FDD00494F0F /* SearchViewController.swift */,
+				4E55F96127A57FEE00494F0F /* SearchResultViewController.swift */,
+				4E55F96327A5804E00494F0F /* PostEditorViewController.swift */,
+				4E55F96527A5806400494F0F /* PublishPostViewController.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		B71DED62A6A4EF3D594539B2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				52C76ECB6DF372F0A6ED789E /* Pods-Jstagram.debug.xcconfig */,
+				473905FB9E98CBE38755EE73 /* Pods-Jstagram.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -180,9 +224,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E55F93A27A56A7500494F0F /* Build configuration list for PBXNativeTarget "Jstagram" */;
 			buildPhases = (
+				BAEB6C6ED1D90F5A7B147A34 /* [CP] Check Pods Manifest.lock */,
 				4E55F92227A56A7400494F0F /* Sources */,
 				4E55F92327A56A7400494F0F /* Frameworks */,
 				4E55F92427A56A7400494F0F /* Resources */,
+				E8118CDEF58B6CDF1C3880B3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,12 +278,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E55F93627A56A7500494F0F /* LaunchScreen.storyboard in Resources */,
+				4ED3654027AA566300EA0A5D /* GoogleService-Info.plist in Resources */,
 				4E55F93327A56A7500494F0F /* Assets.xcassets in Resources */,
 				4E55F93127A56A7400494F0F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BAEB6C6ED1D90F5A7B147A34 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Jstagram-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8118CDEF58B6CDF1C3880B3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Jstagram/Pods-Jstagram-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Jstagram/Pods-Jstagram-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Jstagram/Pods-Jstagram-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4E55F92227A56A7400494F0F /* Sources */ = {
@@ -251,6 +340,7 @@
 				4E55F95827A57E4A00494F0F /* EditprofileViewController.swift in Sources */,
 				4E55F92E27A56A7400494F0F /* HomeViewController.swift in Sources */,
 				4E55F96427A5804E00494F0F /* PostEditorViewController.swift in Sources */,
+				4ED3654627AA628C00EA0A5D /* StorageManager.swift in Sources */,
 				4E55F95627A57BFD00494F0F /* RegistrationViewController.swift in Sources */,
 				4E55F94A27A57B0C00494F0F /* NotificationsViewController.swift in Sources */,
 				4E55F96227A57FEE00494F0F /* SearchResultViewController.swift in Sources */,
@@ -258,6 +348,8 @@
 				4E55F96027A57FDD00494F0F /* SearchViewController.swift in Sources */,
 				4E55F94C27A57B2000494F0F /* ProfileViewController.swift in Sources */,
 				4E55F92A27A56A7400494F0F /* AppDelegate.swift in Sources */,
+				4ED3654427AA622200EA0A5D /* AuthManager.swift in Sources */,
+				4ED3654227AA613C00EA0A5D /* DatabaseManger.swift in Sources */,
 				4E55F92C27A56A7400494F0F /* SceneDelegate.swift in Sources */,
 				4E55F95A27A57F5500494F0F /* PostViewController.swift in Sources */,
 				4E55F95C27A57F7900494F0F /* SettingsViewController.swift in Sources */,
@@ -404,6 +496,7 @@
 		};
 		4E55F93B27A56A7500494F0F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52C76ECB6DF372F0A6ED789E /* Pods-Jstagram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -433,6 +526,7 @@
 		};
 		4E55F93C27A56A7500494F0F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 473905FB9E98CBE38755EE73 /* Pods-Jstagram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
